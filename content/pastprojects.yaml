@@ -1,0 +1,8 @@
+- title: Nuba
+  image: "../src/assets/images/projects/nuba.jpg"
+  link: https://www.betacode.tech/
+  description: A self-promotion and networking mobile platform, where users can score their favorite projects and contribute to the creation of the biggest ranked database of artist profiles.
+- title: Yellow Pages
+  image: "../src/assets/images/projects/yellowpages.jpg"
+  link: https://play.google.com/store/apps/details?id=com.smakosh.atchit
+  description: Directory of businesses app, developed for Kenia, Angola, Mozambique, Cape Verde and Principe in iOS and Android operating systems.

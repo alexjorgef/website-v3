@@ -1,0 +1,55 @@
+image: node:10.17.0
+# Reference: https://classic.yarnpkg.com/en/docs/install-ci/
+# https://www.npmjs.com/package/gatsby-plugin-disqus
+# https://stackoverflow.com/questions/64573177/unable-to-resolve-dependency-tree-error-when-installing-npm-packages
+# https://stackoverflow.com/questions/66239691/what-does-npm-install-legacy-peer-deps-do-exactly-when-is-it-recommended-wh
+
+variables:
+  GATSBY_TEST: test
+
+before_script:
+  - node -v
+  - npm -v
+  - npm install --unsafe-perm=true -g netlify-cli
+  - npx envinfo --system --binaries --npmPackages netlify-cli --npmGlobalPackages netlify-cli
+  - netlify --version
+
+stages:
+  - test
+  - build
+  - deploy
+
+cache:
+  untracked: true
+  paths:
+    - node_modules/
+
+build:
+  stage: build
+  script:
+    - yarn install
+    - yarn build
+  before_script:
+    - yarn --version
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+
+test:
+  stage: test
+  script:
+    - echo Run tests...
+
+deploy:
+  stage: deploy
+  environment:
+    name: production
+    url: https://website-v3.alexjorgef.com
+  dependencies:
+    - build
+  only:
+    - main
+  script:
+    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
