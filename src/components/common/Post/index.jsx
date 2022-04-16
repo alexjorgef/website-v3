@@ -16,7 +16,7 @@ export const Post = ({ html, frontmatter, timeToRead }) => {
   const { theme } = useContext(ThemeContext)
   const disqusShortName = 'https-alexjorgef-com'
   const disqusConfig = {
-    url: `https://alexjorgef.com${frontmatter.path}`,
+    url: `https://website-v3.alexjorgef.com${frontmatter.path}`,
     identifier: frontmatter.id,
     title: frontmatter.title,
   }

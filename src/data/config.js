@@ -1,8 +1,8 @@
 module.exports = {
   defaultTitle: 'alexjorgef',
-  logo: 'https://alexjorgef.com/favicon/logo-48.png',
+  logo: 'https://website-v3.alexjorgef.com/favicon/logo-48.png',
   author: 'Alexandre Ferreira',
-  url: 'https://alexjorgef.com',
+  url: 'https://website-v3.alexjorgef.com',
   legalName: 'Alexandre Ferreira',
   defaultDescription:
     "I'm Ismail Ghallou aka Smakosh, a self-taught Graphic, UI/UX Designer and full stack developer, interested in the web, neural networks & tech in general.",

@@ -35,7 +35,7 @@ export const SEO = ({
 		},
 		"headline": "${description}",
 		"image": "${
-      cover ? `https://alexjorgef.com${cover}` : `https://alexjorgef.com${Thumbnail}`
+      cover ? `https://website-v3.alexjorgef.com${cover}` : `https://website-v3.alexjorgef.com${Thumbnail}`
     }",
 		"datePublished": "${datePublished}",
 		"dateModified": "${dateModified}",
@@ -53,7 +53,7 @@ export const SEO = ({
 			}
 		},
 		"description": "${description}",
-		"url": "${url}${location}/?ref=alexjorgef.com"
+		"url": "${url}${location}/?ref=website-v3.alexjorgef.com"
 	}`
 
   const structuredDataOrganization = `{
@@ -98,7 +98,7 @@ export const SEO = ({
         content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
       />
 
-      <meta property="og:url" content={`${url}${location}/?ref=alexjorgef.com`} />
+      <meta property="og:url" content={`${url}${location}/?ref=website-v3.alexjorgef.com`} />
       <meta
         property="og:type"
         content={type === 'NewsArticle' ? 'NewsArticle' : 'website'}

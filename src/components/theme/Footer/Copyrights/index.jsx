@@ -55,7 +55,7 @@ export default () => {
         </a>
         , 
         <a
-          href="https://alexjorgef.com"
+          href="https://website-v3.alexjorgef.com"
           rel="noopener noreferrer"
           target="_blank"
         >

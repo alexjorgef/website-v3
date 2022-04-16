@@ -6,13 +6,13 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://alexjorgef.com',
+    siteUrl: 'https://website-v3.alexjorgef.com',
     rssMetadata: {
-      site_url: 'https://alexjorgef.com',
+      site_url: 'https://website-v3.alexjorgef.com',
       feed_url: `${config.url}${config.siteRss}`,
       title: 'alexjorgef | Blog',
       description: config.defaultDescription,
-      image_url: 'https://alexjorgef.com/static/favicon/logo-512.png',
+      image_url: 'https://website-v3.alexjorgef.com/static/favicon/logo-512.png',
       author: config.author,
       copyright: `${config.defaultTitle} © ${new Date().getFullYear()}`,
     },
